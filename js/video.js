@@ -20,18 +20,18 @@ document.querySelector("#pause").addEventListener("click", function() {
 });
 document.querySelector("#slower").addEventListener("click", function() {
 	video.playbackRate *= 0.95;
-	console.log(video.playbackRate)
+	console.log("Playback speed is " + video.playbackRate)
 });
 document.querySelector("#faster").addEventListener("click", function() {
 	video.playbackRate /= 0.95;
-	console.log(video.playbackRate)
+	console.log("Playback speed is " + video.playbackRate)
 });
 document.querySelector("#skip").addEventListener("click", function() {
 	video.currentTime += 15;
 	if (video.currentTime >= video.duration) {
 		video.currentTime = 0;
 	}
-	console.log(video.currentTime)
+	console.log("Current time is " + video.currentTime)
 });
 const mu = document.querySelector('#mute');
 mu.addEventListener("click", function() {
